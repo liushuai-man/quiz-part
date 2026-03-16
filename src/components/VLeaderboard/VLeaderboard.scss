@@ -5,6 +5,9 @@
 
   &__leaders {
     margin-top: rem(48px);
+    display: grid;
+    grid-gap: rem(24px);
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   }
 
   &__empty {
@@ -12,11 +15,7 @@
   }
 }
 
-.leaders {
-  display: grid;
-  grid-gap: rem(24px);
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-}
+
 
 .leader {
   display: flex;
@@ -24,8 +23,16 @@
   flex-direction: column;
   border-radius: rem(16px);
   padding: rem(32px) rem(64px);
+  width: rem(300px);
+  height: rem(400px);
   background-color: var(--white);
   border: 2px solid var(--primary);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   &__image-box {
     overflow: hidden;
@@ -37,6 +44,18 @@
 
   &__name {
     font-size: rem(20px);
+    margin-top: rem(16px);
+  }
+
+  &__character {
+    font-size: rem(14px);
+    color: var(--gray);
+    margin-top: rem(8px);
+  }
+
+  &__summary {
+    font-size: rem(14px);
+    color: var(--gray);
     margin-top: rem(16px);
   }
 
