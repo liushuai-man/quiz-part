@@ -9,6 +9,7 @@ export interface UserCharacter {
   image: string;
   name: string;
   summary: string;
+  score: number;
 }
 
 export interface UserRequest {
